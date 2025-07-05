@@ -8,11 +8,13 @@ use Illuminate\Http\JsonResponse;
 
 class StudentController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      */
     public function index() : JsonResponse
     {
+        $students = Students::all();
         return response()->json([
             'message'=>'hit the url and controller correctly',
             'status'=>200,
