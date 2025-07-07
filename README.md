@@ -1,6 +1,3 @@
-Here's an updated version of your README file, formatted properly for GitHub and with the **"Contribution"**, **"Contact"**, and **"your name/email"** sections removed as requested:
-
-````markdown
 # Laravel Sanctum RESTful API with Scribe Documentation
 
 This repository contains a **Laravel 12** project that implements a **RESTful API** secured with **Laravel Sanctum** for authentication and uses **Scribe** for automated API documentation generation.
@@ -135,8 +132,3 @@ This project is open-source and available under the MIT License.
 ---
 
 *Generated using Laravel Sanctum, Scribe, and industry best practices as of July 2025.*
-
-```
-
-Let me know if you'd like to add badges (e.g., Laravel version, license, or build status) or improve any section further!
-```
