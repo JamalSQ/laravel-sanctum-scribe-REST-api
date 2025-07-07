@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CompanyModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\JsonResponse;
@@ -14,11 +15,11 @@ class StudentController extends Controller
      */
     public function index() : JsonResponse
     {
-        $students = Students::all();
+        $Companies = CompanyModel::all();
         return response()->json([
             'message'=>'hit the url and controller correctly',
             'status'=>200,
-            'token'=>Hash::make("12345678")
+            'data'=>$Companies,
         ]);
     }
     
@@ -27,8 +28,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        return "store method";
-        //
+        
     }
 
     /**
